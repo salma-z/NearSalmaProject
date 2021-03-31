@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/profilephoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/addpost"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:hint="add post"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/addsugg"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="48dp"
+        android:hint="add suggestion"
+        android:gravity="center"/>
+
+
+</LinearLayout>

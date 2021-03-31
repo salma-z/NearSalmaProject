@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ToprestelavivActivity">
+
+    <Button
+        android:id="@+id/barstelaviv"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="bars"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/restelaviv"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="resturant"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="5dp"/>
+
+
+
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+    <Button
+        android:id="@+id/cafetelaviv"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="cafes"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/goback3"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="go back"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

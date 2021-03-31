@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "46716231654",
+    "firebase_url": "https://near-520b0.firebaseio.com",
+    "project_id": "near-520b0",
+    "storage_bucket": "near-520b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46716231654:android:7e6766235c2e805738c027",
+        "android_client_info": {
+          "package_name": "com.example.nearsalmaproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46716231654-oruu65s1btmnp8ftcahpio7l35nalrms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDDY0EOW8TmbwGmsEutEmntpeM2J0j-3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46716231654-oruu65s1btmnp8ftcahpio7l35nalrms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
