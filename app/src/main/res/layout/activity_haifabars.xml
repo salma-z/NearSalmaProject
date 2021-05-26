@@ -4,56 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    tools:context=".Telcafe">
-
+    android:orientation="vertical"
+    tools:context=".barshaifa">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <ImageView
-            android:id="@+id/zorkikcafe"
+            android:id="@+id/izabar"
             android:layout_width="match_parent"
             android:layout_height="187dp"
             android:layout_gravity="center"
-            android:contentDescription="@string/cafe_zorik"
-            app:srcCompat="@drawable/cafezorik" />
+            app:srcCompat="@drawable/izabar"
+            android:contentDescription="@string/iza_bar_picture"/>
+
+
 
         <TextView
-            android:id="@+id/zorikcafetext"
+            android:id="@+id/izabartext"
             android:layout_width="match_parent"
-            android:layout_height="68dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="15dp"
             android:autoSizeTextType="none"
-            android:textAlignment="center"
-            android:textColor="#100D0D"
-            android:textColorHighlight="#100D0D"
-            android:textColorHint="#100D0D"
-            android:textColorLink="#100D0D"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:text="@string/location_yehuda_hamakkabbi_st_4_tel_aviv_yafo_6266905"
-            tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:id="@+id/nahatcafe"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="187dp"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/nahatcafe"
-            android:contentDescription="@string/nahat_cafe_picture"/>
-
-        <TextView
-            android:id="@+id/nahatcafetext"
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_gravity="center"
-            android:autoSizeTextType="none"
-            android:text="@string/location_dizengoff_square_1_tel_aviv_yafo"
+            android:text="@string/location_moshe_aharon_st1"
             android:textAlignment="center"
             android:textColor="#100D0D"
             android:textColorHighlight="#100D0D"
@@ -63,61 +40,63 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/shneorcafe"
+            android:id="@+id/templebar"
             android:layout_width="match_parent"
             android:layout_height="187dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/cafeshneor"
-            android:contentDescription="@string/cafe_shneor_picture"/>
+            app:srcCompat="@drawable/templebar"
+            android:contentDescription="@string/temple_bar_picture"/>
 
         <TextView
-            android:id="@+id/shneorcafetext"
+            android:id="@+id/templebartext"
             android:layout_width="match_parent"
-            android:layout_height="68dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:layout_marginTop="15dp"
             android:autoSizeTextType="none"
+            android:text="@string/location_hahistadrut_ave_55_haifa"
             android:textAlignment="center"
             android:textColor="#100D0D"
             android:textColorHighlight="#100D0D"
             android:textColorHint="#100D0D"
             android:textColorLink="#100D0D"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:text="@string/location_pinsker_st_20_tel_aviv_yafo_63421" />
+            android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/tachitcafe"
+            android:id="@+id/kingdombar"
             android:layout_width="match_parent"
             android:layout_height="187dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/tachtitcafe"
-            android:contentDescription="@string/cafe_tahchit_picture"/>
+            android:contentDescription="@string/kingdom_bar_and_restaraunt_picture"
+            app:srcCompat="@drawable/kingdomrestaurantbar" />
 
         <TextView
-            android:id="@+id/tahchitcafetext"
+            android:id="@+id/kingdombartext"
             android:layout_width="match_parent"
-            android:layout_height="68dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:layout_marginTop="15dp"
             android:autoSizeTextType="none"
+            android:text="@string/location_sderot_ben_gurion_37_haifa"
             android:textAlignment="center"
             android:textColor="#100D0D"
             android:textColorHighlight="#100D0D"
             android:textColorHint="#100D0D"
             android:textColorLink="#100D0D"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:text="@string/location_lincoln_st_9_tel_aviv_yafo" />
+            android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/lawndercafe"
+            android:id="@+id/momokitchen"
             android:layout_width="match_parent"
             android:layout_height="187dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/landwercafe"
-            android:contentDescription="@string/landwer_cafe_picture"/>
+            android:contentDescription="@string/momo_kitchen_bar_picture"
+            app:srcCompat="@drawable/momokitchenbar" />
 
         <TextView
-            android:id="@+id/lawndercafetext"
+            android:id="@+id/momokitchentext"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:layout_gravity="center"
@@ -129,18 +108,19 @@
             android:textColorLink="#100D0D"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:text="@string/location_72_tel_aviv_yafo"
-            />
+            android:layout_marginTop="15dp"
+            android:text="@string/location_ahi_eilat_7_haifa" />
 
         <ImageView
-            android:id="@+id/yonitacafe"
+            android:id="@+id/thebearin"
             android:layout_width="match_parent"
             android:layout_height="187dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/yonitacafe"
-            android:contentDescription="@string/yonita_cafe_picture"/>
+            android:contentDescription="@string/the_bear_inn_picture"
+            app:srcCompat="@drawable/thebearinn" />
+
         <TextView
-            android:id="@+id/yonitacafetext"
+            android:id="@+id/thebearinntext"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:layout_gravity="center"
@@ -152,7 +132,62 @@
             android:textColorLink="#100D0D"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:text="@string/_12_hashomer_st_7_tel_aviv_yafo"/>
+            android:layout_marginTop="15dp"
+            android:text="@string/location_hanassi_blvd_135_haifa" />
+
+        <ImageView
+            android:id="@+id/noalasockspub"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/nola_socks_pub_picture"
+            app:srcCompat="@drawable/nolasockspub" />
+
+        <TextView
+            android:id="@+id/noalasockspubtext"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="none"
+            android:textAlignment="center"
+            android:textColor="#100D0D"
+            android:textColorHighlight="#100D0D"
+            android:textColorHint="#100D0D"
+            android:textColorLink="#100D0D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:text="@string/location_shalom_aleichem_st_4_haifa" />
+
+        <ImageView
+            android:id="@+id/winebarhaifa"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/wine_bar_by_andre_suidan_picture"
+            app:srcCompat="@drawable/winebarbyandresuidan" />
+
+        <TextView
+            android:id="@+id/winebarhaifatext"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:autoSizeTextType="none"
+            android:textAlignment="center"
+            android:textColor="#100D0D"
+            android:textColorHighlight="#100D0D"
+            android:textColorHint="#100D0D"
+            android:textColorLink="#100D0D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:text="@string/location_hanassi_blvd_98_haifa" />
 
     </LinearLayout>
 </ScrollView>
+
+
+
+
+
+

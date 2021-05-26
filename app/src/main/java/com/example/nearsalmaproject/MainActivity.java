@@ -10,6 +10,7 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -106,11 +107,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-
-        if (view==buttonlogin) {
-            if (editTextTextEmailAddress.getText().toString().equals("") || editTextTextPassword.getText().toString().equals(""))
-                Toast.makeText(this, "password or email is empty", Toast.LENGTH_LONG).show();
-            else {
+        if (editTextTextEmailAddress.getText().toString().equals("") || editTextTextPassword.getText().toString().equals(""))
+            Toast.makeText(this, "password or email is empty", Toast.LENGTH_LONG).show();
+        else {
+            if (view == buttonlogin) {
                 signin(editTextTextEmailAddress.getText().toString(), editTextTextPassword.getText().toString());
 
                 SharedPreferences.Editor editor = sp.edit();
@@ -119,11 +119,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 editor.putString("user", user);
                 editor.putString("password", password);
                 editor.commit();
-            }
+            } else
+                createuser(editTextTextEmailAddress, editTextTextPassword);
         }
-        else
-            createuser( editTextTextEmailAddress, editTextTextPassword);
-
     }
 
     private void signin(String email, String password) {
@@ -136,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(MainActivity.this, "Authentication success.",
                                     Toast.LENGTH_SHORT).show();
                             // Sign in success, update UI with the signed-in user's information
-                            Intent i = new Intent(MainActivity.this, TopresActivity.class);
+                            Intent i = new Intent(MainActivity.this, AllPostsActivity.class);
                             startActivity(i);
                         } else {
                             // If sign in fails, display a message to the user.
@@ -173,9 +171,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             startActivity(i);
                         } else {
                             // If sign in fails, display a message to the user.
-
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
+                            Log.d("FIREBASESALMA",task.getException().toString());
 
                         }
 

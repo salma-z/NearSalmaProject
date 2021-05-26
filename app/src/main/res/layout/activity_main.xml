@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:inputType="text"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:inputType="text">
+    tools:context=".MainActivity">
 
 
     <EditText
@@ -17,10 +17,9 @@
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
-        android:inputType="textEmailAddress"
-        android:labelFor="@id/editTextTextEmailAddress"
         android:hint="@string/prompt_email"
-           />
+        android:inputType="textEmailAddress"
+        android:labelFor="@id/editTextTextEmailAddress" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -29,9 +28,9 @@
         android:layout_marginTop="15dp"
         android:autofillHints=""
         android:gravity="center"
+        android:hint="@string/prompt_password"
         android:inputType="textPassword"
-        android:labelFor="@id/editTextTextPassword"
-       android:hint="@string/prompt_password"  />
+        android:labelFor="@id/editTextTextPassword" />
 
 
     <Button
@@ -46,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="sign up" />
+        android:text="@string/sign_up" />
 
 
 

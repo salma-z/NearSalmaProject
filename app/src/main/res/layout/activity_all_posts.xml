@@ -10,7 +10,7 @@
 
 
   <Button
-      android:id="@+id/HaifaRes"
+      android:id="@+id/Haifabutton"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="5dp"
@@ -18,7 +18,7 @@
       android:text="haifa" />
 
   <Button
-      android:id="@+id/Telavivres"
+      android:id="@+id/Telavivbuton"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="10dp"
@@ -30,7 +30,7 @@
       android:layout_width="126dp"
       android:layout_height="wrap_content"
       android:layout_marginTop="560dp"
-      android:text="go back" />
+      android:text="@string/go_back1" />
 
 
 </LinearLayout>

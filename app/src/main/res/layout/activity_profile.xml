@@ -16,21 +16,23 @@
         tools:srcCompat="@tools:sample/avatars"
         android:layout_marginTop="15dp"/>
 
-    <TextView
-        android:id="@+id/addpost"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/addusername"
+        android:layout_width="356dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:hint="add post"
-        android:layout_height="50dp" />
+        android:hint="username"
+        android:textAlignment="center" />
+
 
     <Button
-        android:id="@+id/addsugg"
-        android:layout_width="match_parent"
-        android:layout_marginTop="15dp"
+        android:id="@+id/submit"
+        android:layout_width="342dp"
         android:layout_height="48dp"
-        android:hint="add suggestion"
-        android:gravity="center"/>
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="submit" />
 
 
 </LinearLayout>

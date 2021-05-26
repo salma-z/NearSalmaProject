@@ -12,14 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TelbarsActivity"></activity>
+        <activity android:name=".barshaifa"></activity>
+        <activity android:name=".haifares" />
+        <activity android:name=".cafeshaifa" />
+        <activity android:name=".TelbarsActivity" />
         <activity android:name=".TelresActivity" />
         <activity android:name=".Telcafe" />
-        <activity android:name=".ToprestelavivActivity" />
+        <activity android:name=".Telavivnav" />
         <activity android:name=".AllPostsActivity" />
         <activity android:name=".ResetpasswordActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".TopresActivity" />
+        <activity android:name=".HaifaNav" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

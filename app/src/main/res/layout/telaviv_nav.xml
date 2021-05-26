@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ToprestelavivActivity">
+    tools:context=".Telavivnav">
 
     <Button
         android:id="@+id/barstelaviv"
@@ -25,10 +25,6 @@
         android:layout_marginBottom="50dp"
         android:layout_marginTop="5dp"/>
 
-
-
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
     <Button
         android:id="@+id/cafetelaviv"
         android:layout_width="126dp"
@@ -42,8 +38,7 @@
         android:id="@+id/goback3"
         android:layout_width="126dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="go back"
-        android:layout_gravity="center"/>
+        android:layout_marginTop="300dp"
+        android:text="go back" />
 
 </LinearLayout>

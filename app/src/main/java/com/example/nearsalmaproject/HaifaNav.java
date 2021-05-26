@@ -8,7 +8,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
-public class TopresActivity extends AppCompatActivity {
+public class HaifaNav extends AppCompatActivity {
     private Button haifacafe;
     private Button haifabars;
     private Button reshaifa;
@@ -16,7 +16,7 @@ public class TopresActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toprestelaviv);
+        setContentView(R.layout.activity_haifanav);
         goback2 = findViewById(R.id.goback2);
         haifacafe = findViewById(R.id.haifacafe);
         haifabars = findViewById(R.id.haifabars);
@@ -24,11 +24,30 @@ public class TopresActivity extends AppCompatActivity {
         goback2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int8= new Intent(TopresActivity.this, AllPostsActivity.class);
+                Intent int8= new Intent(HaifaNav.this, AllPostsActivity.class);
                 startActivity(int8);
             }
         });
-
+        haifacafe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent int9 = new Intent(HaifaNav.this, cafeshaifa.class);
+                startActivity(int9);
+            }
+        });
+        reshaifa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent int10 = new Intent(HaifaNav.this,haifares.class);
+                startActivity(int10);
+            }
+        });
+        haifabars.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent int11 = new Intent(HaifaNav.this, barshaifa.class);
+            }
+        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

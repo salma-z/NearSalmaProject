@@ -6,12 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 
 public class AllPostsActivity extends AppCompatActivity  {
-    private Button HaifaRes;
-    private Button Telavivres;
+    private Button Haifabutton;
     private Button goback1;
+    private Button Telavivbuton;
 
 
     @Override
@@ -19,21 +18,21 @@ public class AllPostsActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_posts);
 
-        HaifaRes = findViewById(R.id.HaifaRes);
-        Telavivres = findViewById(R.id.Telavivres);
+        Haifabutton = findViewById(R.id.Haifabutton);
+        Telavivbuton = findViewById(R.id.Telavivbuton);
         goback1 = findViewById(R.id.goback1);
-       HaifaRes.setOnClickListener(new View.OnClickListener() {
+        Haifabutton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Intent int1 = new Intent(AllPostsActivity.this,TopresActivity.class);
+               Intent int1 = new Intent(AllPostsActivity.this, HaifaNav.class);
                startActivity(int1);
            }
        });
 
-       Telavivres.setOnClickListener(new View.OnClickListener() {
+        Telavivbuton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Intent int2 = new Intent(AllPostsActivity.this, ToprestelavivActivity.class);
+               Intent int2 = new Intent(AllPostsActivity.this, Telavivnav.class);
                startActivity(int2);
            }
        });

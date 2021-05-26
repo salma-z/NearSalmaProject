@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TopresActivity">
+    tools:context=".HaifaNav">
 
 
     <Button
         android:id="@+id/haifacafe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="cafe" android:layout_marginTop="5dp"/>
+        android:text="@string/cafe"
+        android:layout_marginTop="5dp"/>
 
     <Button
         android:id="@+id/haifabars"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="bars"
+        android:text="@string/bars"
         android:layout_marginTop="5dp"/>
 
     <Button
@@ -33,7 +33,7 @@
         android:layout_width="126dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="530dp"
-        android:text="go back" />
+        android:text="@string/go_back" />
 
 
 </LinearLayout>
