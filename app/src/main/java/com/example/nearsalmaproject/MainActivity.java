@@ -63,47 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
-        for (int i =0; i<menu.size();i++) {
-            MenuItem item = menu.getItem(i);
-            if (item.getItemId()==R.id.profilepic){
-               if (bitmap!=null){
-                 //  item.setIcon()
-               }
-            }
-        }return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.editprofile) {
-            Intent intent = new Intent(this, ProfileActivity.class);
-            startActivity(intent);
-        } else if (id == R.id.camera) {
-            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            startActivityForResult(intent, 0);
-        }
-        else{
-            //todo
-        }
-
-        return true;
-
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 0) {
-            if (resultCode == RESULT_OK) {
-                 bitmap = (Bitmap) data.getExtras().get("data");
-
-            }
-        }
-    }
 
     @Override
     public void onClick(View view) {
@@ -150,7 +110,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    public void createLoginDialog(){
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
         Dialog d = new Dialog(this);
         d.setContentView(R.layout.activity_main);
         d.setCancelable(true);
@@ -158,7 +120,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editTextTextEmailAddress = d.findViewById(R.id.editTextTextEmailAddress);
         buttonlogin.setOnClickListener(this);
         d.show();
+
     }
+
 
     private void createuser(EditText editTextTextEmailAddress, EditText editTextTextPassword) {
         mAuth.createUserWithEmailAndPassword(editTextTextEmailAddress.getText().toString() , editTextTextPassword.getText().toString())

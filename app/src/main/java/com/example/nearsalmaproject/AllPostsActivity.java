@@ -13,6 +13,7 @@ public class AllPostsActivity extends AppCompatActivity  {
     private Button Telavivbuton;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

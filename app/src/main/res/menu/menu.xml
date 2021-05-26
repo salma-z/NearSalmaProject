@@ -6,10 +6,6 @@
         android:id="@+id/editprofile"
         />
 
-    <item
-        android:id="@+id/camera"
-        android:title="camera"
-        />
 
     <item
         android:id="@+id/profilepic"
